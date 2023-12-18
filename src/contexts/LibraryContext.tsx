@@ -271,7 +271,6 @@ function LibraryProvider({ children }: LibraryProviderProps) {
   const getBooks = useCallback(
     async (topic: string, index: number) => {
       const apiUrl = `/.netlify/functions/getBooks?topic=${topic}&index=${index}`;
-      console.log(apiUrl);
 
       try {
         const response = await fetch(apiUrl, {

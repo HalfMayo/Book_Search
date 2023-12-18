@@ -66,7 +66,7 @@ export default function APISearch({ width = "300px" }: APISearchProps) {
         width="100%"
       />
       <Accordion
-        className="max-h-[453px] overflow-hidden overflow-y-auto scrollbar"
+        className="h-[calc(90vh-167px)] sm:max-h-[453px] sm:h-auto overflow-hidden overflow-y-auto scrollbar"
         infos={results}
         upperState={isOpen}
         upperSetState={toggleText}

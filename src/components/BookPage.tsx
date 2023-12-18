@@ -7,7 +7,7 @@ export default function BookPage() {
 
   if (!openBook) {
     return (
-      <div className="w-[95vw] sm:w-[500px] h-[95vh] sm:h-[600px] mb-[5vh] sm:mb-0 flex flex-col items-center justify-center rounded-md shadow-md bg-white">
+      <div className="w-[95vw] sm:w-[500px] h-[calc(97vh-5rem)] sm:h-[600px] mb-[3vh] sm:mb-0 flex flex-col items-center justify-center rounded-md shadow-md bg-white">
         <img className="opacity-80" src={reading} alt="woman with laptop" />
         <p className="text-sm">
           <a href="https://www.freepik.com/free-vector/book-lover-concept-illustration_7117804.htm#page=2&query=illustration%20book%20reading&position=30&from_view=search&track=country_rows_v1">
@@ -22,7 +22,7 @@ export default function BookPage() {
   const description = openBook.propFour?.match(/(?<=Description: ).*$/);
 
   return (
-    <div className="w-[500px] h-[600px] rounded-md shadow-md flex flex-col items-center justify-between gap-4">
+    <div className="w-[95vw] sm:w-[500px] h-[calc(97vh-5rem)] sm:h-[600px] mb-[3vh] sm:mb-0 rounded-md shadow-md flex flex-col items-center justify-between gap-4">
       <div className="h-40 w-full flex items-center gap-4 bg-surface px-4 pb-4 pt-6">
         <img
           className={`h-32 ${openBook.img ? "" : "hidden"}`}
